@@ -6,27 +6,27 @@ CREATE TABLE ExtrusoradeCarne (
     carne INTEGER NOT NULL
 );
 
--- Datos de ejemplo
-INSERT INTO ExtrusoradeCarne (carne) VALUES (100.00);
-INSERT INTO ExtrusoradeCarne (carne) VALUES (150.00);
-INSERT INTO ExtrusoradeCarne (carne) VALUES (50.00);
-INSERT INTO ExtrusoradeCarne (carne) VALUES (75.00);
-INSERT INTO ExtrusoradeCarne (carne) VALUES (200.00);
-INSERT INTO ExtrusoradeCarne (carne) VALUES (120.00);
-INSERT INTO ExtrusoradeCarne (carne) VALUES (80.00);
-INSERT INTO ExtrusoradeCarne (carne) VALUES (60.00);
-INSERT INTO ExtrusoradeCarne (carne) VALUES (90.00);
-INSERT INTO ExtrusoradeCarne (carne) VALUES (110.00);
+
+INSERT INTO ExtrusoradeCarne (carne) VALUES (100);
+INSERT INTO ExtrusoradeCarne (carne) VALUES (150);
+INSERT INTO ExtrusoradeCarne (carne) VALUES (50);
+INSERT INTO ExtrusoradeCarne (carne) VALUES (75);
+INSERT INTO ExtrusoradeCarne (carne) VALUES (200);
+INSERT INTO ExtrusoradeCarne (carne) VALUES (120);
+INSERT INTO ExtrusoradeCarne (carne) VALUES (80);
+INSERT INTO ExtrusoradeCarne (carne) VALUES (60);
+INSERT INTO ExtrusoradeCarne (carne) VALUES (90);
+INSERT INTO ExtrusoradeCarne (carne) VALUES (110);
 
 -- Consultar los datos
 -- Se Seleccionan todas las extrusoras
 SELECT * FROM ExtrusoradeCarne;
 
 -- Extrusoras con más de 80 kg de carne
-SELECT * FROM ExtrusoradeCarne WHERE carne > 80.00;
+SELECT * FROM ExtrusoradeCarne WHERE carne > 80;
 
 -- Extrusoras con menos de 100 kg de carne
-SELECT * FROM ExtrusoradeCarne WHERE carne < 100.00;
+SELECT * FROM ExtrusoradeCarne WHERE carne < 100;
 
 -- Cantidad de carne de la extrusora con el ID 1
 SELECT carne FROM ExtrusoradeCarne WHERE id = 1;
